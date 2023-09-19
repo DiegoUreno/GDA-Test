@@ -5,14 +5,13 @@ Se debe tener instalada la ultima version de Php (8.2.10) así como Composer 2.4
 Previo a la instalación del servicio se debe tener una base de datos creada en un servicio local llamada "mydb", los datos de acceso deberán ser proporcionados en el archivo .env.
 
 ### Comandos a correr
-
+- Correr el siguiente comando:
+  - composer update
 - Dentro del directorio del proyecto correr:
   - php artisan migrate
 - Se han agregado un par de seeders para poblar las tablas Communes y Regions, si así se desea se debe correr los siguientes comandos:
   - php artisan db:seed --class=RegionsTableSeeder
   - php artisan db:seed --class=CommunesTableSeeder
-- De ser necesario correr el comando:
-  - composer update
 - Para finalizar se debe ingresar el comando:
   - php artisan serve
 
